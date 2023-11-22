@@ -2,7 +2,7 @@ import json
 from src.models.history_model import HistoryModel
 
 
-# Req. 7
+# Req. 8
 def test_request_history():
     list_history_json = HistoryModel.list_as_json()
     assert isinstance(list_history_json, str)
