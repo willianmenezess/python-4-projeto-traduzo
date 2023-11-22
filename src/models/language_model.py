@@ -8,11 +8,15 @@ class LanguageModel(AbstractModel):
     def __init__(self, data):
         super().__init__(data)
 
+    # transforma o data em dicionário, pois vem da requisição em formato json
     def to_dict(self):
         return {
             "name": self.data["name"],
             "acronym": self.data["acronym"]
         }
 
-    def list_dicts():
+    # usa o find do AbstractModel para retornar uma lista de dicionários
+    # usa o to_dict para cada um dos itens da lista, para nao vir o _id
+    @classmethod
+    def list_dicts(cls):
         return [language.to_dict() for language in LanguageModel.find()]
