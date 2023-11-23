@@ -7,11 +7,13 @@ except ImportError as error:
     pytestmark = pytest.mark.skip(reason=error.msg)
 
 
+# fixture para criar um app
 @pytest.fixture(autouse=True)
 def app_test():
     return app.test_client()
 
 
+# fixture para criar um historico de traducao com dois registros
 @pytest.fixture(autouse=True)
 def prepare_base(app_test):
     db.get_collection("history").drop()
@@ -32,3 +34,17 @@ def prepare_base(app_test):
             "translate_to": "pt",
         },
     )
+
+
+# fixture para criar um usuario admin na collection users
+# @pytest.fixture(autouse=True)
+# def prepare_user(app_test):
+#     db.get_collection("users").drop()
+#     app_test.post(
+#         "/admin/register",
+#         data={
+#             "username": "admin",
+#             "password": "admin",
+#             "token": "token",
+#         }
+#     )
