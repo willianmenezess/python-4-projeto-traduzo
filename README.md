@@ -1,33 +1,26 @@
-# Boas-vindas ao repositório do Traduzo
+# Projeto Traduzo
 
-Atente-se a cada passo descrito a seguir pois eles lhe ajudarão a realizar o projeto! #vqv 🚀
+Este foi o quarto projeto realizado na eletiva de python da Trybe (escola de programação). Foi desenvolvido uma ferramenta de tradução de textos entre vários idiomas, utilizando Python com o Framework Flask, para criar uma aplicação Server Side. Ou seja, o Back-end (pela controller) fornecerá diretamente a camada View, para a pessoa usuária.
 
 ![Tela](src/views/static/images/traduzo.png)
 
-A partir deste repositório você encontra os detalhes de como estruturar o desenvolvimento do seu projeto.
-
-<details>
-<summary>📃 Termos e acordos</summary>
-
-- Ao iniciar este projeto, você concorda com as diretrizes do [Código de Conduta e do Manual da Pessoa Estudante da Trybe](https://app.betrybe.com/learn/student-manual/codigo-de-conduta-da-pessoa-estudante).
-
-</details>
+A partir deste repositório você encontra os detalhes de como rodar este projeto e observa os requisitos que foram necessários para desenvolvê-lo.
 
 ----
 
 ## Entregáveis
 
 <details>
-<summary>🧑‍💻 O que deverá ser desenvolvido</summary>
+<summary>🧑‍💻 O que foi desenvolvido</summary>
 
 - Uma ferramenta de tradução de textos entre vários idiomas, utilizando Python com o Framework Flask, para criar uma aplicação Server Side. Ou seja, o Back-end (pela controller) fornecerá diretamente a camada View, para a pessoa usuária.
 
 </details>
 
 <details>
-  <summary>📝 Habilidades a serem trabalhadas </summary>
+  <summary>📝 Habilidades que foram trabalhadas </summary>
 
-Neste projeto, verificamos se você é capaz de:
+Neste projeto, fui capaz de:
 
 - Implementar uma API utilizando arquitetura em camadas MVC;
 - Utilizar o Docker para projetos Python;
@@ -35,17 +28,6 @@ Neste projeto, verificamos se você é capaz de:
 - Escrever testes para APIs para garantir a implementação dos endpoints;
 - Interagir com um banco de dados não relacional MongoDB;
 - Desenvolver páginas web Server Side.
-
-</details>
-
-<details>
-<summary>🕊️ Como entregar</summary>
-
-- Crie um _Pull Request_ deste repositório para realizar a entrega do projeto.
-
-- Quando preciso, consulte:
-  - Nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/fc998c60-386e-46bc-83ca-4269beb17e17/section/fe827a71-3222-4b4d-a66f-ed98e09961af/day/35e03d5e-6341-4a8c-84d1-b4308b2887ef/lesson/573db55d-f451-455d-bdb5-66545668f436);
-  - Nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/).
 
 </details>
 
@@ -89,9 +71,7 @@ docker compose up -d mongodb
 python3 src/app.py
 ```
 
-**[4]** Comece seu desenvolvimento, podendo inclusive já acessar a aplicação pelo navegador na rota <http://127.0.0.1:8000/> caso utilize a padrão do projeto.
-
-- Em primeiro momento, praticamente nada funcionará, então vamos já para programação.
+**[4]** Já pode acessar a aplicação pelo navegador na rota <http://127.0.0.1:8000/> caso utilize a padrão do projeto.
 
 **[5]** 💡Dica: O projeto utilizará a Pymongo, mas se preocupe pouco com o Mongodb, pois assim como no conteúdo, você precisará penas herdar a classe abstrata [abstract_model](src/models/abstract_model.py) em sua model, para que tenha acesso aos principais métodos de manipulação do banco.
 
@@ -139,7 +119,7 @@ docker compose exec -it translate sh
 
 ----
 
-## Requisitos
+## Requisitos feitos neste Projeto
 
 ### 1 - Crie a conexão com o MongoDB
 
